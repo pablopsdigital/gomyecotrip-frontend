@@ -1,7 +1,12 @@
 import axios from 'axios';
 
+// Strip a stray leading BOM/whitespace so a bad env var value can't silently
+// turn baseURL into an unparseable URL (seen when the value was re-pasted
+// into Vercel's env var UI from a BOM-prefixed source).
+const baseURL = (import.meta.env.VITE_API_BASE_URL || '').replace(/^\uFEFF/, '').trim();
+
 const ApiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL,
+  baseURL,
   timeout: 15000
 });
 
