@@ -1,13 +1,11 @@
 import React, {useEffect, useState, ref} from 'react';
 import './UserBookingHistory.scss';
 import {useDispatch, useSelector} from 'react-redux';
-import {deleteBooking, listBookingMine} from '../../../redux/actions/bookingActions';
 import LoadingBox from '../../../components/LoadingBox/LoadingBox';
 import MessageBox from '../../../components/MessageBox/MessageBox';
 import Layout from '../../../components/Layout/Layout';
 import {useLocation, useNavigate} from 'react-router-dom';
 import NoResultsFound from '../../../components/NoResultsFound/NoResultsFound';
-import axios from 'axios';
 import {changeBookingState, getAllBookingsForUser} from '../../../actions/bookingsActions';
 import {Button} from '../../../components/Button';
 import ProfileTabs from '../LayoutUserProfile';
