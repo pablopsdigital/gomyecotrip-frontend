@@ -1,4 +1,3 @@
-import axios from 'axios';
 import './UserBookingDetail.css';
 import { PayPalButton } from 'react-paypal-button-v2';
 import React, { useEffect, useState } from 'react';

@@ -13,7 +13,6 @@ import Highlights from './Highlights/Highlights';
 import BookingForm from './BookingForm/BookingForm';
 import MapGoogle from '../Experiences/MapGoogle/MapGoogle';
 import Comments from './Comments/Comments';
-import axios from 'axios';
 import {Link, useLocation, useParams} from 'react-router-dom';
 import {getDetailsExperienceById} from '../../actions/experiencesActions';
 import NoResultsFound from '../../components/NoResultsFound/NoResultsFound';

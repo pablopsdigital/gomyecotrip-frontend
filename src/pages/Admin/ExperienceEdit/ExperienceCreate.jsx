@@ -1,8 +1,6 @@
-import Axios from 'axios';
 import './ExperienceEdit.scss';
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {detailsExperience, updateExperience} from '../../../redux/actions/experienceActions';
 import LoadingBox from '../../../components/LoadingBox/LoadingBox';
 import MessageBox from '../../../components/MessageBox/MessageBox';
 import {EXPERIENCE_UPDATE_RESET} from '../../../redux/constants/experienceConstants';
