@@ -15,7 +15,7 @@ export default function MapExperience({experience, ...props}) {
   //=================================================================
   const {isLoaded} = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: import.meta.env_VITE_GOOGLE_KEY
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_KEY
   });
 
   const [map, setMap] = useState(null);
